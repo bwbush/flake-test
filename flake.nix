@@ -7,6 +7,9 @@
 
     packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
 
-    hydraJobs = self.packages.x86_64-linux.hello;
+    hydraJobs = {
+      hello = self.packages.x86_64-linux.hello;
+    };
+
   };
 }
